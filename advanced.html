@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+    <body>
+
+		<div class="container">
+			<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+			  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+				<img alt="Google" class="justify-content-start mx-auto d-block img-fluid"
+				width="68" height="23"
+				src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+				<span class="fs-4"> </span>
+			  </a>
+		
+			  <!--  Navigation links -->
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="index.html">Search</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="images.html">Images</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="advanced.html">Advanced</a>
+				</li>
+				</ul>
+			</header>
+		  </div>
+		
+		<div class="container">
+			<h1 class="text-danger">Advanced Search</h1>
+			<h6 >Знайти сторінки, що містять...</h6>
+			<form action="https://google.com/search" method="get">				
+				<div class="input-group row mt-3">
+					<label class="col-2 col-form-label">усі ці слова:</label>
+					<div class="col-6">
+						<input type="text submit" name="as_q" class="form-control" >
+					</div>
+				</div>
+				<div class="input-group row mt-3">
+					<label class="col-2 col-form-label">точне слово або фразу:</label>
+					<div class="col-6">
+						<input type="text" name="as_epq" class="form-control" >
+					</div>
+				</div>
+				<div class="input-group row mt-3">
+					<label class="col-2 col-form-label">будь-яке з цих слів:</label>
+					<div class="col-6">
+						<input type="text" name="as_oq" class="form-control" >
+					</div>
+				</div>
+				<div class="input-group row mt-3">
+					<label class="col-2 col-form-label">жодне з цих слів:</label>
+					<div class="col-6">
+						<input type="text" name="as_eq" class="form-control" >
+					</div>
+				</div>	
+				<input type="submit" style="visibility: hidden;" />
+			</form>
+		</div>
+
+    </body>
+</html>
